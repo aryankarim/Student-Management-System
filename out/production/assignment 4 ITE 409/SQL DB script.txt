@@ -1,0 +1,11 @@
+create database aryandb;
+
+CREATE TABLE `aryandb`.`students` (
+ `ID` int(10) NOT NULL,
+ `FName` text NOT NULL,
+ `LName` text NOT NULL,
+ `Email` varchar(50) NOT NULL,
+ `Gender` enum('Male','Female') NOT NULL,
+ `Average` float NOT NULL,
+ PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
